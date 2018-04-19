@@ -13,13 +13,15 @@ You frankly just have too big of an attack surface. You probably have WIFI, acco
 
 Developers are human, they make mistakes.
 
+Any sufficiently bored 16 year old with internet access can and will fuck with you.
+
 It's not that they aren't trying. No developer starts his day wanting to eat shit because his trash code had a vulnerability that hit the reuters wires. He meant to get to it. It was a known issue. I swear it was marked '#TODO FIXME' in the code. These are human beings. Probably doing a job they don't like on not nearly enough hours of sleep.  Would you want to get up every day and go work for Symantec? No, of course not. They don't either.
 
 ### All developers write shitty code.
 
 Writing secure code is hard. Ask [Paul Vixie](https://en.wikipedia.org/wiki/Paul_Vixie). He has a fucking helicopter. But that's neither here nor there. Vixie is the man responsible for BIND--the code that runs most of the worlds DNS servers--you know: the magic that resolves "pornhub.com" into "185.53.178.8". He also wrote crontab, a UNIX server scheduling daemon that's installed on all basically every sever in the world.
 
-The guy is really a remarkable human being. Software engineer at DEC. He's a founding member of the ISC for fucks sake. My point is there was a period in the early aughts where his lifes work was getting abused left and right. Bored teenagers were the fuel, and a misisng bounds check was the fire. He wasn't a shitty developer. He was a great developer. He liked to build shit.  He didn't necessarily think **SECURITY FIRST**.
+The guy is really a remarkable human being. Software engineer at DEC. He's a founding member of the ISC for fucks sake. My point is there was a period in the early aughts where his lifes work was [getting abused left and right](assets/vixie.png). Bored teenagers were the fuel, and a misisng bounds check was the fire. He wasn't a shitty developer. He was a great developer. He liked to build shit.  He didn't necessarily think **SECURITY FIRST**.
 
 ## Security First
 
@@ -27,17 +29,24 @@ It's a game of trade offs. Obviously in a perfect world all of your data would b
 
 # Let's get to the point.
 
+### Use full disk encryption.
+
+You should require a stupid password in order to power your machine on. It should take effort to type. Your machine, if grabbed at a lock screen, should be a brick to all but state actors.
+
+### Physical machine access is the trump card.
+
+ - TBD
+
 ### Use a hardware wallet.
 
-But never relegate physical access. All one has to do is look at the [ChangeLog](https://blog.trezor.io/trezor-firmware-security-update-1-5-2-5ef1b6f13fed) of your most pop
-A hardware wallet can be thought of a second party in a 2 of 3 multi sig wallet.
+But never relegate physical access. All one has to do is look at the [ChangeLog](https://blog.trezor.io/trezor-firmware-security-update-1-5-2-5ef1b6f13fed) of your device de'jour.  A hardware wallet can be thought of a second party in a 2 of 3 multi sig wallet.
 
 Simply using a hardware wallet can stop an attacker with perfect information in his tracks.
 
 ### Learn how to use GPG.
 
 It's simple. It's the cryptography behind everything. Public key encryption. It's [Pretty Good Privacy(PGP)](https://en.wikipedia.org/wiki/Pretty_Good_Privacy). It turns out factoring prime numbers while simple, is time consuming. And dividing is easy. And somehow some nerd somewhere discovered with decent certainty they can be generated. It's insanity, really. But something about the shoulders of giants...
-Opsec
+
 Even if for now it's just symmetrically encrypting files. Don't leave keys around in plaintext, ever.
 
 
@@ -93,19 +102,24 @@ At a minimum:
 Don't talk about crypto in real life. Probably don't hang out in Rio slums rocking a "HODL" t-shirt. Like in life in general, don't attract unnecesary attention. Walk with confidence and keep your head up.
 
 
+### Don't make enemies
+
+In life, and in crypto. Unless that's your schtick, then good luck.
+
 ### Different environments for different tasks
 
   TODO: what OS should I run?
 
-     probably os x. linux if it's your thing. avoid windows (security tradeoffs for what is amazing backwards compatability).
+     - probably os x. linux if it's your thing. avoid windows (security tradeoffs for what is amazing backwards compatability).
+     - can link to my dockerized browser+vpn setup
 
   TODO: touch vms, containers, whonix/tor+tails
 
-     Use a separate computer for gaming and general purpose shit than you do to handle sensitive tasks (crypto/secure chat).
+     Use a separate computer(or VM, or container) for gaming and general purpose shit than you do to handle sensitive tasks (crypto/secure chat).
 
   TODO:
 
-     Never install any pirated software. Don't install software in general, just use a browser.
+     Never install any pirated software. Don't install software in general, just use a browser. run everything else in containers.
 
 
 ### Trust noone and nothing.
@@ -129,7 +143,7 @@ https://grugq.github.io/
 
 ### Most AV's are liabilities.
 
-https://twitter.com/taviso/status/922517900702793728
-https://googleprojectzero.blogspot.com/2016/06/how-to-compromise-enterprise-endpoint.html
+  - https://twitter.com/taviso/status/922517900702793728
+  - https://googleprojectzero.blogspot.com/2016/06/how-to-compromise-enterprise-endpoint.html
 
 
