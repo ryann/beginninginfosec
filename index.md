@@ -146,4 +146,4 @@ https://grugq.github.io/
   - https://twitter.com/taviso/status/922517900702793728
   - https://googleprojectzero.blogspot.com/2016/06/how-to-compromise-enterprise-endpoint.html
 
-
+### If any device ever asks you to update anything involving Adobe just throw that device in the closest body of water.
